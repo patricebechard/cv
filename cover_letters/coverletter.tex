@@ -1,0 +1,113 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%Pour langue et caractères spéciaux
+\usepackage[french]{babel} 
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage[utf8]{inputenc}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Patrice }{Bechard}
+\address{633, ave Beaumont, Montr\'eal, QC, H3N 1V7, CANADA}
+%\address{7702, rue Chambord, Apt. 2, Montréal, QC, H2E 1X3, CANADA}
+\mobile{(819) 209-4623} 
+%%% Social
+\email{bechardpatrice@gmail.com}
+\github{patricebechard}
+\linkedin{patricebechard}
+\homepage{patricebechard.github.io}
+%%% Optionals
+\position{Étudiant{\enskip\cdotp\enskip}M.Sc. Informatique}
+%\quote{"A person who never made a mistake never tried anything new."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {Recrutement}
+  {Montreal Institute for Learning Algorithms\\Pavillon André-Aisenstadt, 2920 Ch de la Tour\\ Montréal, QC H3T 1N8}
+\letterdate{\today}
+\lettertitle{Application pour la maitrise professionnelle en apprentissage automatique}
+\letteropening{Madame, Monsieur,}
+\letterclosing{Sincèrement,}
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Patrice Bechard~~~·~~~Lettre de motivation}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+
+Je suis présentement étudiant à la maîtrise (M.Sc.) en informatique ici à l'Université de Montréal et je souhaite transférer à la maîtrise professionnelle en apprentissage automatique au MILA. Je crois sincèrement que ce cheminement me permettra d'être mieux préparé à mon entrée sur le marché du travail à la suite de la maîtrise, me donnant l'opportunité de faire un stage en industrie dans ce domaine en pleine effervescence. 
+
+Je suis quelqu'un s'intéressant grandement à l'intelligence artificielle et à la coexistence entre celle-ci et l'être humain. Je crois que la maîtrise professionnelle en apprentissage automatique me permet d'obtenir de bonnes bases dans ce domaine au niveau théorique tout en me faisant directement appliquer ces techniques au niveau des divers projets à faire dans chaque cours, mais aussi grâce au stage, qui permet d'appliquer les compétences obtenues sur un problème réel. De plus, ces bases me permettront par la suite de continuer à suivre la littérature du milieu tout en ayant une compréhension de la terminologie et des aspects plus techniques. 
+
+Finalement, je crois être un candidat idéal pour la maîtrise professionnelle par mon caractère curieux et travaillant. J'espère que les raisons mentionnées ci-haut sauront vous convaincre.
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}
